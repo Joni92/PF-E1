@@ -29,16 +29,6 @@ router.get('/products/:id', async (req, res) => {
     }
 });
 
-// router.post('/products', async (req, res) => {
-//     const { body } = req;
-//     const newProd = {
-//       id: this.latestId.length + 1,
-//       ...body,
-//     };
-//     manager.addProduct(newProd);
-//     res.status(201).json(newProd);
-// });
-
 router.put("/:pid", async (req, res) =>{
     let id = req.params.pid
     let updateProduct = req.body
